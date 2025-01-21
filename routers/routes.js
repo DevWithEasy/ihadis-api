@@ -12,7 +12,9 @@ const routers = [
     {
         path : '/',
         handler : (req,res) =>{
-            res.send('Server is ready!');
+            res.json({
+                message : 'Server is ready!'
+            });
         }
     }
 ]
